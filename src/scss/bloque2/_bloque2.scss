@@ -1,0 +1,129 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque2 {
+    height: auto;
+    background-color: v.$color1;
+    padding: 8rem 0;
+    position: relative;
+    overflow: hidden;
+    .bloque2BackImage1,
+    .bloque2BackImage2 {
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+        @include m.desktop_1020 {
+            display: none;
+        }
+    }
+    .bloque2BackImage2 {
+        left: 0;
+        width: 11rem;
+    }
+    .bloque2BackImage1 {
+        right: 0;
+        width: 17rem;
+        bottom: 0rem;
+    }
+    .bloque2BackDesktopImage1,
+    .bloque2BackDesktopImage2 {
+        display: none;
+        @include m.desktop_1020 {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            z-index: 0;
+        }
+    }
+    .bloque2BackDesktopImage1 {
+        width: 8rem;
+        left: 34%;
+    }
+    .bloque2BackDesktopImage2 {
+        width: 47.5rem;
+        right: 0;
+        @include m.desktop_1200 {
+            width: 49rem;
+        }
+        @include m.desktop_1300 {
+            width: 49rem;
+        }
+    } 
+}
+
+.bloque2Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+    position: relative;
+    z-index: 10;
+    @include m.phone_360 {
+        row-gap: 2.5rem;
+    }
+    h3 {
+        margin: 0;
+        text-align: center;
+        font-size: 2.3rem;
+        width: 23rem;
+        font-weight: 500;
+        color: black;
+        // background-color: green;
+        @include m.desktop_1020 {
+            display: none;
+        }
+        span {
+            font-weight: 700;
+        }
+    }
+    .bloque2ContainerTextDesktop {
+        display: none;
+        @include m.desktop_1020 {
+            display: block;
+            margin: 0;
+            text-align: center;
+            font-size: v.$desktop1020_title_size;
+            width: 70rem;
+            // background-color: green;
+            font-weight: 500;
+            color: black;
+            span {
+                font-weight: 700;
+            }
+        }
+        @include m.desktop_1300 {
+            width: 80rem;
+            font-size: v.$desktop1300_title_size;
+        }
+    }
+    img {
+        width: 19rem;
+        @include m.desktop_1020 {
+            width: 27rem;
+        }
+        @include m.desktop_1300 {
+            width: 33rem;
+        }
+    }
+}
+
+.bloque2Container--images {
+    // background-color: green;
+    display: flex;
+    column-gap: 1rem;
+    @include m.desktop_1020 {
+        column-gap: 3rem;
+    }
+    @include m.desktop_1200 {
+        column-gap: 5rem;
+    }
+    img {
+        width: 13rem;
+        @include m.phone_414 {
+            width: 15rem;
+        }
+        @include m.desktop_1200 {
+            width: 18rem;
+        }
+    }    
+}

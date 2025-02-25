@@ -1,0 +1,669 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv='Expires' content='0')
+        meta(http-equiv='Last-Modified' content='0')
+        meta(http-equiv='Cache-Control' content='no-cache, mustrevalidate')
+        meta(http-equiv='Pragma' content='no-cache')
+        title Conversatorios Cayetano
+        link(rel="stylesheet", href="./css/app.css")
+        link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
+        script(src='https://www.google.com/recaptcha/api.js' async='' defer='')
+        //- script(async).
+        //-     (function(h,o,t,j,a,r){
+        //-     h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        //-     h._hjSettings={hjid:3659234,hjsv:6};
+        //-     a=o.getElementsByTagName('head')[0];
+        //-     r=o.createElement('script');r.async=1;
+        //-     r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        //-     a.appendChild(r);
+        //-     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet')
+    body
+        //- .popup
+        //-     .popupcontent
+        //-         .popupcontent--top
+        //-             h3.popupcontent--top--close X
+        //-             .popcontainer
+        //-                 img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/imagen-pop-up.webp", alt="Avatar de llama")
+        //-                 .div  
+        //-                     h3
+        //-                         | ¡Postula a Cayetano con 
+        //-                         span Beca 18
+        //-                         |  este 
+        //-                         span 15 de diciembre!
+        //-                         | 
+        //-                     h4
+        //-                         | Si rendiste el 
+        //-                         span Examen Nacional de Preselección,  
+        //-                         | tu inscripcion es 
+        //-                         span sin costo.   
+                                        
+
+
+
+
+
+
+        .bloqueFloat(onclick="topScroll()")
+            h3 Quiero más información
+        .bloqueFloat2(onclick="topScroll2()")
+            h3 Quiero más información
+        script.
+            function topScroll(){
+                if( screen.width >= 319 ) {
+                    window.scrollTo(0, 600)
+                } 
+                if ( screen.width >= 359 ) {
+                    window.scrollTo(0, 750)
+                } 
+            }
+            function topScroll2(){
+                if( screen.width >= 1019 ) {
+                    window.scrollTo(0, 30)
+                } 
+            }
+        .bloque1
+            .bloque1Container
+                .bloque1Background
+                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_logo-scaled.webp", alt="")
+                    .bloque1BackgroundText
+                        h3
+                            | Preseleccionado de
+                            span
+                                |  Beca 18:
+                            br
+                            | transforma tu futuro con la
+                            span
+                                |  excelencia de Cayetano
+                                
+                        //- img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/logo-beca18-finish-scaled.webp", alt="")
+                        h5 
+                            span
+                                |  Examen de admisión virtual
+                        h4 12 de abril
+                .bloque1FormContent
+                    .bloque1Form
+                        .bloque1FormTitle
+                            h3 Déjanos tus datos y 
+                                span te acompañaremos en el proceso
+                        input(type="text" placeholder="Nombres*")
+                        input(type="text" placeholder="Apellidos*")
+                        input(type="text" placeholder="Tipo de documento*")
+                        input.inputNumber(type="number" placeholder="Número de documento*" inputmode="numeric")
+                        input(type="text" placeholder="Celular*")
+                        input(type="text" placeholder="Correo electrónico*")
+                        input(type="text" placeholder="Ciudad*")
+                        input(type="text" placeholder="Elige tu carrera*")
+                        .bloque1TopFormContainer--terminos
+                            input.asistencia(type="checkbox", name="")
+                            h3 Deseo asistir al evento virtual de este 24 de Noviembre.
+                        .bloque1TopFormContainer--terminos
+                            input(type="checkbox", name="")
+                            h3 Política de privacidad y términos de servicio.
+                        .captcha
+                            #recap3503766000237491098.g-recaptcha(data-sitekey='6LdqkDoiAAAAALdLtgIzFUQelkS9jGZU4W7gjLHG' data-theme='light' data-callback='rccallback3503766000237491098' captcha-verified='false')
+                            #recapErr3503766000237491098(style='font-size:12px;color:red;visibility:hidden;') Error en validación de Captcha. Si no es un robot, inténtelo de nuevo.
+                        .bloque1FormButton
+                            button
+                                h3 Quiero más información
+                        script.
+                            let popup = document.querySelector('.popupcontent');
+                            let bodyContent = document.querySelector('body');
+                            let popContent = document.querySelector('.popup');
+
+                            setTimeout(function(){
+                                bodyContent.classList.add('bodyOverflow');
+                                popContent.classList.add('popupOpen');
+                                popup.classList.add('popupcontentOpen');
+                            }, 120000);
+        .bloque2
+            img.bloque2BackImage1(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_bloque2_movil_shield1.webp", alt="")
+            img.bloque2BackImage2(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_bloque2_movil_shield2.webp", alt="")
+            //- img.bloque2BackDesktopImage1(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_bloque2_shield1_desktop.webp", alt="")
+            img.bloque2BackDesktopImage2(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_bloque2_shield2_desktop.webp", alt="")
+            .bloque2Container
+                h3
+                    | Postula a la universidad 
+                    
+                    span
+                        |  N.º 1 del Perú
+
+                    br
+                    | e inicia clases en
+                    
+                    span
+                        |  agosto
+                h3.bloque2ContainerTextDesktop Postula a la universidad 
+                    span 
+                        |  N.º 1 del Perú
+                   
+                .bloque2Container--images
+                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_bloque2_image1.webp", alt="")
+                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_bloque2_image2.webp", alt="")
+        .bloque3
+            img.bloque3BackImage1(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18-shield-block3.webp", alt="")
+            img.bloque3BackImage2(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18-shield2-block3.webp", alt="")
+            img.bloque3BackImage3(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/boca18_bloque3_movil_shield3-scaled.webp", alt="")
+            img.bloque3BackDesktopImage1(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_bloque3_shield1_desktop.webp", alt="")
+            img.bloque3BackDesktopImage2(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_bloque3_shield2_desktop.webp", alt="")
+            img.bloque3BackDesktopImage3(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_bloque3_shield3_desktop.webp", alt="")
+            .bloque3Container
+                .bloque3Universidad
+                    .bloque3Universidad--text
+                        h3 Somos 
+                            span  TOP 2 de universidades
+                        p Porque la posición de la universidad que elijas influye en el puntaje que recibirás en la etapa de selección. Esta lista clasifica a las universidades por su 
+                            span calidad, 
+                            | y si logras una vacante en Cayetano, 
+                            span obtendrás un puntaje más alto.
+                        .bloque3Universidad--text--background
+                            h4 ¡Transforma tu futuro con Beca18
+                            h4.bloque3Universidad--text--background--h4 de PRONABEC y Cayetano!
+                    .bloque3Universidad--image
+                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_tano-scaled.webp", alt="")
+                .bloque3Beca18
+                    .bloque3Beca18--text
+                        h3 ¿Por qué postular a Cayetano
+                            br
+                            | con 
+                            span Beca 18?*
+                        p 
+                            span María López, José Paredes y Ana Rojas, 
+                            | egresados de Cayetano con Beca 18, te cuentan por qué postularon a Cayetano y eligieron mantenerse entre los mejores.
+                        h4 *Las modalidades disponibles para postular a Cayetano con Beca18 son: Ordinaria, Amazónica y Población Afroperuana, Rapared y Educación Intercultural Bilingüe (EIB)
+                    .bloque3Beca18--slider
+                        .slider__container2.swiper.mySwiper2
+                            .slider__grid2.swiper-wrapper
+                                .slider__item2.swiper-slide.swiper-slide1
+                                    .sliderItemInfo2.ItemFirst
+                                        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper Lorem ipsum dolor sit amet, consecte 
+                                        .sliderItemInfo2--info
+                                            h3 María López
+                                            h4 Lorem Ipsum
+                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_test-scaled.webp", alt="")
+                                .slider__item2.swiper-slide.swiper-slide2
+                                    .sliderItemInfo2.ItemTwo
+                                        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper Lorem ipsum dolor sit amet, consecte 
+                                        .sliderItemInfo2--info
+                                            h3 María López
+                                            h4 Lorem Ipsum
+                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_test-scaled.webp", alt="")
+                                .slider__item2.swiper-slide
+                                    .sliderItemInfo2.ItemThree
+                                        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper Lorem ipsum dolor sit amet, consecte 
+                                        .sliderItemInfo2--info
+                                            h3 María López
+                                            h4 Lorem Ipsum
+                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_test-scaled.webp", alt="")
+                        .swiper-button-prev2 
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp-arrow-right-white.png", alt="")
+                        .swiper-button-next2
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp-arrow-left-white.png", alt="")
+                        .swiper-pagination2
+                .bloque3TextBottomMovil
+                    h3 *Las modalidades disponibles para postular a Cayetano con Beca 18 son: Ordinaria, Amazónica y Población Afroperuana, Rapared y Educación Intercultural Bilingüe (EIB).
+        .bloque4
+            .bloque4Container
+                .bloque4Title
+                    h3 
+                        span Etapas del proceso 
+                        br
+                        | paso a paso
+                    h3.bloque4TitleDesktop 
+                        span Etapas del proceso 
+                        |  paso a paso 
+                //- .bloque4Etapa1
+                //-     h3
+                //-         span Primera etapa - 
+                //-         | Preselección
+                //-     .etapa1Slider
+                //-         .slider__container3.swiper.mySwiper3
+                //-             .slider__grid3.swiper-wrapper
+                //-                 .slider__item3.swiper-slide.swiper-slide1
+                //-                     .sliderItemInfo3
+                //-                         h3 Del 13 sep 
+                //-                             br
+                //-                             | al 18 oct
+                //-                         .sliderItemInfo3--separator
+                //-                             .sliderItemInfo3Separator
+                //-                         h4 Inscripción a Beca18
+                //-                 .slider__item3.swiper-slide.swiper-slide2
+                //-                     .sliderItemInfo3
+                //-                         h3 15 nov 
+                //-                         .sliderItemInfo3--separator
+                //-                             .sliderItemInfo3Separator
+                //-                         h4 Publicación de la lista de preseleccionados para rendir el examen de Preselección.
+                //-                 .slider__item3.swiper-slide
+                //-                     .sliderItemInfo3
+                //-                         h3 01 dic
+                //-                         .sliderItemInfo3--separator
+                //-                             .sliderItemInfo3Separator
+                //-                         h4 Examen Nacional de Preselección.
+                //-                 .slider__item3.swiper-slide
+                //-                     .sliderItemInfo3
+                //-                         h3 08 ene
+                //-                         .sliderItemInfo3--separator
+                //-                             .sliderItemInfo3Separator
+                //-                         h4 Publicación de la lista de preseleccionados.
+                //-         .swiper-button-prev3
+                //-             img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp-arrow-right-white.png", alt="")
+                //-         .swiper-button-next3
+                //-             img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp-arrow-left-white.png", alt="")
+                //-         .swiper-pagination3
+                //-     .etapa1Desktop
+                //-         .etapa1DesktopItem
+                //-             h3 Del 13 sep 
+                //-                 br
+                //-                 | al 18 de oct
+                //-             .etapa1DesktopSeparator
+                //-                 .etapa1DesktopLine
+                //-             h4 Inscripción de Beca18.
+                //-         .etapa1DesktopItem
+                //-             h3 15 nov
+                //-             .etapa1DesktopSeparator
+                //-                 .etapa1DesktopLine
+                //-             h4 Publicación de la lista de preseleccionados para rendir el examen de Preselección.
+                //-         .etapa1DesktopItem
+                //-             h3 01 dic
+                //-             .etapa1DesktopSeparator
+                //-                 .etapa1DesktopLine
+                //-             h4 Examen Nacional de Preselección.
+                //-         .etapa1DesktopItem
+                //-             h3 08 ene
+                //-             .etapa1DesktopSeparator
+                //-                 .etapa1DesktopLine
+                //-             h4 Publicación de la lista de preseleccionados.
+                .bloque4Etapa2
+                    h3
+                        span Segunda etapa - 
+                        | Selección
+                    .etapa2Slider
+                        .slider__container4.swiper.mySwiper4
+                            .slider__grid4.swiper-wrapper
+                                //- .slider__item4.swiper-slide.swiper-slide1
+                                //-     .sliderItemInfo4.etapa2Dark
+                                //-         h3 Primer
+                                //-             br
+                                //-             | momento
+                                //-         .sliderItemInfo4--separator
+                                //-             .sliderItemInfo4Separator
+                                //-         h4 Para postulantes que optan participar en el Primer Semestre Académico.
+                                //- .slider__item4.swiper-slide.swiper-slide2
+                                //-     .sliderItemInfo4
+                                //-         h3.info4--text Del 09 ene al 03 mar
+                                //-         .sliderItemInfo4--separator
+                                //-             .sliderItemInfo4Separator
+                                //-         h4
+                                //-             span Postula a Cayetano
+                                //-             br
+                                //-             | Inicia tu proceso de postulaci&oacute;n 
+                                //-             span aqu&iacute;.
+                                //-             |  Un asesor se contactar&aacute; contigo para guiarte en el proceso
+                                //- .slider__item4.swiper-slide
+                                //-     .sliderItemInfo4
+                                //-         h3 24 mar
+                                //-         .sliderItemInfo4--separator
+                                //-             .sliderItemInfo4Separator
+                                //-         h4 Publicación de la lista de seleccionados.
+                                //- .slider__item4.swiper-slide
+                                //-     .sliderItemInfo4
+                                //-         h3 28 mar
+                                //-         .sliderItemInfo4--separator
+                                //-             .sliderItemInfo4Separator
+                                //-         h4 Publicación de la lista de becarios.
+                                .slider__item4.swiper-slide.swiper-slide1
+                                    .sliderItemInfo4.etapa2Dark
+                                        h3 Segundo
+                                            br
+                                            | momento
+                                        .sliderItemInfo4--separator
+                                            .sliderItemInfo4Separator
+                                        h4 Para postulantes que optan participar en el Segundo Semestre Académico.
+                                .slider__item4.swiper-slide.swiper-slide2
+                                    .sliderItemInfo4
+                                        h3.info4--text Del 07 mar al 07 may
+                                        .sliderItemInfo4--separator
+                                            .sliderItemInfo4Separator
+                                        h4
+                                            span Postula a Cayetano
+                                            br
+                                            | Inicia tu proceso de postulaci&oacute;n 
+                                            span aqu&iacute;.
+                                            |  Un asesor se contactar&aacute; contigo para guiarte en el proceso
+                                .slider__item4.swiper-slide
+                                    .sliderItemInfo4
+                                        h3 28 may
+                                        .sliderItemInfo4--separator
+                                            .sliderItemInfo4Separator
+                                        h4 Publicación de la lista de seleccionados.
+                                .slider__item4.swiper-slide
+                                    .sliderItemInfo4
+                                        h3 30 may
+                                        .sliderItemInfo4--separator
+                                            .sliderItemInfo4Separator
+                                        h4 Publicación de la lista de becarios.
+                        .swiper-button-prev4
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp-arrow-right-white.png", alt="")
+                        .swiper-button-next4
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp-arrow-left-white.png", alt="")
+                        .swiper-pagination4
+                    .etapa2Desktop
+                        //- .etapa1DesktopItem.etapa1DesktopItemBlack
+                        //-     h3 Primer momento
+                        //-     .etapa1DesktopSeparator
+                        //-         .etapa1DesktopLine
+                        //-     h4 Para postulantes que optan participar en el Primer Semestre Académico.
+                        //- .etapa1DesktopItem
+                        //-     h3 Del 09 ene al 03 mar
+                        //-     .etapa1DesktopSeparator
+                        //-         .etapa1DesktopLine
+                        //-     h4
+                        //-         span Postula a Cayetano
+                        //-         br
+                        //-         | Inicia tu proceso de postulaci&oacute;n 
+                        //-         span aqu&iacute;.
+                        //-         |  Un asesor se contactar&aacute; contigo para guiarte en el proceso
+                        //- .etapa1DesktopItem
+                        //-     h3 24 mar
+                        //-     .etapa1DesktopSeparator
+                        //-         .etapa1DesktopLine
+                        //-     h4 Publicación de la lista de preseleccionados.
+                        //- .etapa1DesktopItem
+                        //-     h3 28 mar
+                        //-     .etapa1DesktopSeparator
+                        //-         .etapa1DesktopLine
+                        //-     h4 Publicación de la lista de becarios
+                        .etapa1DesktopItem.etapa1DesktopItemBlack
+                            h3 Segundo momento
+                            .etapa1DesktopSeparator
+                                .etapa1DesktopLine
+                            h4 Para postulantes que optan participar en el Segundo Semestre Académico.
+                        .etapa1DesktopItem
+                            h3 Del 07 mar al 07 may
+                            .etapa1DesktopSeparator
+                                .etapa1DesktopLine
+                            h4
+                                span Postula a Cayetano
+                                br
+                                | Inicia tu proceso de postulaci&oacute;n 
+                                span aqu&iacute;.
+                                |  Un asesor se contactar&aacute; contigo para guiarte en el proceso
+                        .etapa1DesktopItem
+                            h3 28 may
+                            .etapa1DesktopSeparator
+                                .etapa1DesktopLine
+                            h4 Publicación de la lista de preseleccionados.
+                        .etapa1DesktopItem
+                            h3 30 may
+                            .etapa1DesktopSeparator
+                                .etapa1DesktopLine
+                            h4 Publicación de la lista de becarios
+        .bloque5
+            img.bloque5Back(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_cayetano_back.webp", alt="")
+            img.bloque5BackDesktop(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_bloque5_bg_desktop-scaled.webp", alt="")
+            img.tanoDesktop(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18__top_tano-scaled.webp", alt="")
+            .bloque5Title
+                h3 ¿Por qué elegir 
+                    span Cayetano?
+            .bloque5Slider
+                .slider__container5.swiper.mySwiper5
+                    .slider__grid5.swiper-wrapper
+                        .slider__item5.swiper-slide.swiper-slide1
+                            .sliderItemInfo5
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_icon1-1.webp", alt="")
+                                .sliderItemContent
+                                    h3 Top 1 del Perú
+                                    h4 Somos la mejor universidad del país por séptimo año consecutivo.
+                                    h5 Fuente: Times Higher Education World University Rankings 2025.
+                        .slider__item5.swiper-slide.swiper-slide2
+                            .sliderItemInfo5 
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_icon2-1.webp", alt="")
+                                .sliderItemContent
+                                    h3 +1800 becarios
+                                    h4 Más de 1800 becarios eligieron estudiar en Cayetano en 2024.
+                        .slider__item5.swiper-slide.swiper-slide3
+                            .sliderItemInfo5
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_icon3.webp", alt="")
+                                .sliderItemContent
+                                    h3 Carreras de excelencia
+                                    h4 Contamos con 21 carreras, todas con la exigencia que nos distingue.
+                        .slider__item5.swiper-slide.swiper-slide3
+                            .sliderItemInfo5
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_iconnew.webp", alt="")
+                                .sliderItemContent
+                                    h3 Egresados de alcance global
+                                    h4 Nuestra formación marca la diferencia en cualquier parte del mundo.
+                        .slider__item5.swiper-slide.swiper-slide3
+                            .sliderItemInfo5
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_icon5.webp", alt="")
+                                .sliderItemContent
+                                    h3 +200 convenios internacionales
+                                    h4 Estudia en las mejores universidades del mundo e internacionaliza tu perfil con nuestros convenios.
+                        .slider__item5.swiper-slide.swiper-slide3
+                            .sliderItemInfo5
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_icon6.webp", alt="")
+                                .sliderItemContent
+                                    h3 Líderes en investigación
+                                    h4 Somos la universidad peruana N.º 1 en investigación.
+                                    h5 Fuente: Ranking Scimago 2023
+                .swiper-button-prev5 
+                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp-arrow-right-white.png", alt="")
+                .swiper-button-next5
+                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp-arrow-left-white.png", alt="")
+                .swiper-pagination5
+            .bloque5SliderDesktop 
+                .slider__container6.swiper.mySwiper6
+                    .slider__grid6.swiper-wrapper
+                        .slider__item6.swiper-slide
+                            .sliderItemInfo6
+                                .sliderItemInfoContent
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_icon1-1.webp", alt="")
+                                    .sliderItemText
+                                        h2 TOP 1 del Perú
+                                        h3 Somos la mejor universidad del país por séptimo año consecutivo.
+                                        h4 Fuente: Times Higher Education World University Rankings 2025.
+                                .sliderItemInfoContent
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_icon2-1.webp", alt="")
+                                    .sliderItemText
+                                        h2 +1800 becarios
+                                        h3 Más de 1000 becarios eligieron estudiar en Cayetano en 2024.
+                                .sliderItemInfoContent
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_icon3.webp", alt="")
+                                    .sliderItemText
+                                        h2 Carreras de excelencia
+                                        h3 Contamos con 20 carreras, todas con la exigencia que nos distingue.
+                        .slider__item6.swiper-slide
+                            .sliderItemInfo6 
+                                .sliderItemInfoContent
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_iconnew.webp", alt="")
+                                    .sliderItemText
+                                        h2 Acompañamiento y formación
+                                        h3 Te apoyamos desde el primer día con un equipo dedicado a tu crecimiento y éxito universitario.
+                                .sliderItemInfoContent
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_icon5.webp", alt="")
+                                    .sliderItemText
+                                        h2 +200 convenios internacionales
+                                        h3 Estudia en las mejores universidades del mundo e internacionaliza tu perfil con nuestros convenios.
+                                .sliderItemInfoContent
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_icon3.webp", alt="")
+                                    .sliderItemText
+                                        h2 Líderes en investigación
+                                        h3 Somos la universidad peruana N.º 1 en investigación.
+                                        h4 Fuente: Times Higher Education World University Rankings 2025
+                .swiper-button-prev6 
+                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp-arrow-right-white.png", alt="")
+                .swiper-button-next6
+                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp-arrow-left-white.png", alt="")
+                .swiper-pagination6
+        .bloque8
+            .bloque8Container
+                .bloque8Top
+                    .bloque8Left
+                        .bloque8LeftTitle
+                            h4 ¡Regístrate en nuestro 
+                                br
+                                |
+                                span evento virtual 
+                                | sin costo!
+                            h4.bloque8LeftTitleh4 ¡Regístrate en nuestro 
+                                span evento virtual 
+                                | sin costo!
+                            h3 Puerta a 
+                                br
+                                | la excelencia
+                            h3.bloque8LeftTitleh3 Puerta a la excelencia
+                            h5 Aquí podrás conocer sobre:
+                        .bloque8LeftItemContent
+                            .bloque8LeftItem
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/11/beca18evento-icon-check.webp", alt="")
+                                h3 Proceso de postulación
+                            .bloque8LeftItem
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/11/beca18evento-icon-award.webp", alt="")
+                                h3 Propuesta educativa de excelencia
+                            .bloque8LeftItem
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/11/beca18evento-icon-handheal.webp", alt="")
+                                h3 Beneficios para becarios
+                    .bloque8Right
+                        img.bloque8RightImage(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/11/beca18-desktop-change-scaled.webp", alt="")
+                        .bloque8RightContent
+                            .bloque8RightItem
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/11/beca18evento-icon-calendar.webp", alt="")
+                                h3 28 nov
+                            .bloque8RightItem
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/11/beca18evento-icon-time.webp", alt="")
+                                h3 6:00 p. m.
+                            .bloque8RightItem
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/11/beca18evento-icon-zoom.webp", alt="")
+                                h3 zoom
+                .bloque8Bottom
+                    button(onclick="toForm()")
+                        h3 ¡Quiero participar!
+                    script.
+                        function toForm() {
+                            if( screen.width >= 319 ) {
+                                let check = document.querySelector('.asistencia');
+                                check.checked = true;
+                                window.scrollTo(0,650)
+                            }
+                            if( screen.width >= 1019 ) {
+                                let check = document.querySelector('.asistencia');
+                                check.checked = true;
+                                window.scrollTo(0, 30)
+                            } 
+                        }
+        .bloque6
+            img.bloque6DesktopImage(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_bloque6_shield1_desktop.webp", alt="")
+            .bloque6Container
+                .bloque6Title
+                    h3 21 carreras universitarias 
+                    h4 para postular con 
+                        span Beca18
+                    h3.bloque6TitleDesktop
+                        span.bloque6Black 21 carreras universitarias 
+                        | para postular con 
+                        span.bloque6Red Beca18
+                .bloque6Subtitle
+                    p Cayetano es más que Cayetano. Por eso contamos con carreras profesionales de 
+                        span ingeniería, gestión, educación, ciencias y salud.
+                .bloque6CarrerasDesktop 
+                    .bloque6DesktopLeft
+                        .bloque6Desktop
+                            .bloque6DesktopItem
+                                img.bloque6DesktopItemSalud(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_middle_shield2.webp", alt="")
+                                h3 Salud
+                            .bloque6DesktopCarreras
+                                h4 Medicina
+                                h4 Enfermería
+                                h4 Estomatología
+                                h4 Psicología
+                                h4 Medicina Veterinaria y Zootecnia
+                                h4 Laboratorio Clínico
+                                h4 Radiología
+                                h4 Terapia de Audición, Voz y Lenguaje
+                                h4 Tarapia Física y Rehabilitación
+                                h4 Terapia Ocupacional
+                        .bloque6Desktop
+                            .bloque6DesktopItem
+                                img.bloque6DesktopItemEducacion(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_middle_shield2.webp", alt="")
+                                h3 Educación
+                            .bloque6DesktopCarreras
+                                h4 Educación
+                                h4 Educación Inicial Intercultural Bilingüe
+                                h4 Educación Primaria Intercultural Bilingüe
+                    .bloque6DesktopRight
+                        .bloque6Desktop
+                            .bloque6DesktopItem
+                                img.bloque6DesktopItemGestion(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_middle_shield2.webp", alt="")
+                                h3 Gestión
+                            .bloque6DesktopCarreras
+                                h4 Administración
+                                h4 Administración en Salud
+                        .bloque6Desktop
+                            .bloque6DesktopItem
+                                img.bloque6DesktopItemIngenieria(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_middle_shield2.webp", alt="")
+                                h3 Ingeniería
+                            .bloque6DesktopCarreras
+                                h4 Ingeniería Ambiental
+                                h4 Ingeniería Industrial
+                                h4 Ingeniería Informática
+                        .bloque6Desktop
+                            .bloque6DesktopItem
+                                img.bloque6DesktopItemCiencias(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_middle_shield2.webp", alt="")
+                                h3 Ciencias
+                            .bloque6DesktopCarreras
+                                h4 Biología
+                                h4 Nutrición
+                                h4 Farmacia y Bioquímica
+                .bloque6Carreras
+                    .bloque6Item.bloque6item1
+                        h3 Ingeniería
+                    .bloque6BlockItem.bloque6BlockItem1
+                        h4.h4ingenieria Ingeniería Ambiental
+                        h4.h4ingenieria Ingeniería Industrial
+                        h4.h4ingenieria Ingeniería Informática
+                    .bloque6Item.bloque6item2
+                        h3 Educación
+                    .bloque6BlockItem.bloque6BlockItem2
+                        h4 Educación
+                        h4 Educación Inicial Intercultural Bilingüe
+                        h4 Educación Primaria Intercultural Bilingüe
+                    .bloque6Item.bloque6item3
+                        h3 Gestión
+                    .bloque6BlockItem.bloque6BlockItem3
+                        h4 Administración
+                        h4 Administración en Salud
+                    .bloque6Item.bloque6item4
+                        h3 Ciencias
+                    .bloque6BlockItem.bloque6BlockItem4
+                        h4 Biología
+                        h4 Nutrición
+                        h4 Farmacia y Bioquímica
+                    .bloque6Item.bloque6item5
+                        h3 Salud
+                    .bloque6BlockItem.bloque6BlockItem5
+                        h4 Medicina
+                        h4 Enfermería
+                        h4 Estomatología
+                        h4 Psicología
+                        h4 Meidina Veterinaria y Zootecnia
+                        h4 Laboratorio Clínico
+                        h4 Radiología
+                        h4 Terapia de Audición, Voz y Lenguaje
+                        h4 Terapia Física y Rehabilitación
+                        h4 Terapia Ocupacional
+        .bloque7
+            .bloque7Container
+                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_logo_top-scaled.webp", alt="")
+                h3 Campus Central:
+                    br
+                    | Av. Honorio Delgado 430
+                    br
+                    | Urb. Ingeniería, San Martín de Porres
+        script(src="./js/script.js" defer)
+        script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
