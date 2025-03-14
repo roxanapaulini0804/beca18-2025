@@ -46,10 +46,6 @@ html(lang="es")
                                         
 
 
-
-
-
-
         .bloqueFloat(onclick="topScroll()")
             h3 Quiero más información
         .bloqueFloat2(onclick="topScroll2()")
@@ -113,15 +109,15 @@ html(lang="es")
                             button
                                 h3 Quiero más información
                         script.
-                            let popup = document.querySelector('.popupcontent');
-                            let bodyContent = document.querySelector('body');
-                            let popContent = document.querySelector('.popup');
+                            //- let popup = document.querySelector('.popupcontent');
+                            //- let bodyContent = document.querySelector('body');
+                            //- let popContent = document.querySelector('.popup');
 
-                            setTimeout(function(){
-                                bodyContent.classList.add('bodyOverflow');
-                                popContent.classList.add('popupOpen');
-                                popup.classList.add('popupcontentOpen');
-                            }, 120000);
+                            //- setTimeout(function(){
+                            //-     bodyContent.classList.add('bodyOverflow');
+                            //-     popContent.classList.add('popupOpen');
+                            //-     popup.classList.add('popupcontentOpen');
+                            //- }, 120000);
         .bloque2
             img.bloque2BackImage1(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_bloque2_movil_shield1.webp", alt="")
             img.bloque2BackImage2(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_bloque2_movil_shield2.webp", alt="")
@@ -181,26 +177,17 @@ html(lang="es")
                         .slider__container2.swiper.mySwiper2
                             .slider__grid2.swiper-wrapper
                                 .slider__item2.swiper-slide.swiper-slide1
-                                    .sliderItemInfo2.ItemFirst
-                                        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper Lorem ipsum dolor sit amet, consecte 
-                                        .sliderItemInfo2--info
-                                            h3 María López
-                                            h4 Lorem Ipsum
-                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_test-scaled.webp", alt="")
+                                    .sliderItemInfo2
+                                        video(id="first_video" src='' controls poster='https://upch-repo-comercial.s3.dualstack.us-east-1.amazonaws.com/24-02-25/prev-1-2.webp')
+                                            | Tu navegador no admite el elemento 
+                                            code video
+                                            | .
                                 .slider__item2.swiper-slide.swiper-slide2
-                                    .sliderItemInfo2.ItemTwo
-                                        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper Lorem ipsum dolor sit amet, consecte 
-                                        .sliderItemInfo2--info
-                                            h3 María López
-                                            h4 Lorem Ipsum
-                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_test-scaled.webp", alt="")
-                                .slider__item2.swiper-slide
-                                    .sliderItemInfo2.ItemThree
-                                        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper Lorem ipsum dolor sit amet, consecte 
-                                        .sliderItemInfo2--info
-                                            h3 María López
-                                            h4 Lorem Ipsum
-                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/10/beca18_test-scaled.webp", alt="")
+                                    .sliderItemInfo2
+                                        video(id="second_video" src='' controls poster='https://upch-repo-comercial.s3.dualstack.us-east-1.amazonaws.com/24-02-25/prev-1-2-1.webp')
+                                            | Tu navegador no admite el elemento 
+                                            code video
+                                            | .
                         .swiper-button-prev2 
                             img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp-arrow-right-white.png", alt="")
                         .swiper-button-next2
@@ -218,67 +205,6 @@ html(lang="es")
                     h3.bloque4TitleDesktop 
                         span Etapas del proceso 
                         |  paso a paso 
-                //- .bloque4Etapa1
-                //-     h3
-                //-         span Primera etapa - 
-                //-         | Preselección
-                //-     .etapa1Slider
-                //-         .slider__container3.swiper.mySwiper3
-                //-             .slider__grid3.swiper-wrapper
-                //-                 .slider__item3.swiper-slide.swiper-slide1
-                //-                     .sliderItemInfo3
-                //-                         h3 Del 13 sep 
-                //-                             br
-                //-                             | al 18 oct
-                //-                         .sliderItemInfo3--separator
-                //-                             .sliderItemInfo3Separator
-                //-                         h4 Inscripción a Beca18
-                //-                 .slider__item3.swiper-slide.swiper-slide2
-                //-                     .sliderItemInfo3
-                //-                         h3 15 nov 
-                //-                         .sliderItemInfo3--separator
-                //-                             .sliderItemInfo3Separator
-                //-                         h4 Publicación de la lista de preseleccionados para rendir el examen de Preselección.
-                //-                 .slider__item3.swiper-slide
-                //-                     .sliderItemInfo3
-                //-                         h3 01 dic
-                //-                         .sliderItemInfo3--separator
-                //-                             .sliderItemInfo3Separator
-                //-                         h4 Examen Nacional de Preselección.
-                //-                 .slider__item3.swiper-slide
-                //-                     .sliderItemInfo3
-                //-                         h3 08 ene
-                //-                         .sliderItemInfo3--separator
-                //-                             .sliderItemInfo3Separator
-                //-                         h4 Publicación de la lista de preseleccionados.
-                //-         .swiper-button-prev3
-                //-             img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp-arrow-right-white.png", alt="")
-                //-         .swiper-button-next3
-                //-             img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/esp-arrow-left-white.png", alt="")
-                //-         .swiper-pagination3
-                //-     .etapa1Desktop
-                //-         .etapa1DesktopItem
-                //-             h3 Del 13 sep 
-                //-                 br
-                //-                 | al 18 de oct
-                //-             .etapa1DesktopSeparator
-                //-                 .etapa1DesktopLine
-                //-             h4 Inscripción de Beca18.
-                //-         .etapa1DesktopItem
-                //-             h3 15 nov
-                //-             .etapa1DesktopSeparator
-                //-                 .etapa1DesktopLine
-                //-             h4 Publicación de la lista de preseleccionados para rendir el examen de Preselección.
-                //-         .etapa1DesktopItem
-                //-             h3 01 dic
-                //-             .etapa1DesktopSeparator
-                //-                 .etapa1DesktopLine
-                //-             h4 Examen Nacional de Preselección.
-                //-         .etapa1DesktopItem
-                //-             h3 08 ene
-                //-             .etapa1DesktopSeparator
-                //-                 .etapa1DesktopLine
-                //-             h4 Publicación de la lista de preseleccionados.
                 .bloque4Etapa2
                     h3
                         span Segunda etapa - 
@@ -286,37 +212,6 @@ html(lang="es")
                     .etapa2Slider
                         .slider__container4.swiper.mySwiper4
                             .slider__grid4.swiper-wrapper
-                                //- .slider__item4.swiper-slide.swiper-slide1
-                                //-     .sliderItemInfo4.etapa2Dark
-                                //-         h3 Primer
-                                //-             br
-                                //-             | momento
-                                //-         .sliderItemInfo4--separator
-                                //-             .sliderItemInfo4Separator
-                                //-         h4 Para postulantes que optan participar en el Primer Semestre Académico.
-                                //- .slider__item4.swiper-slide.swiper-slide2
-                                //-     .sliderItemInfo4
-                                //-         h3.info4--text Del 09 ene al 03 mar
-                                //-         .sliderItemInfo4--separator
-                                //-             .sliderItemInfo4Separator
-                                //-         h4
-                                //-             span Postula a Cayetano
-                                //-             br
-                                //-             | Inicia tu proceso de postulaci&oacute;n 
-                                //-             span aqu&iacute;.
-                                //-             |  Un asesor se contactar&aacute; contigo para guiarte en el proceso
-                                //- .slider__item4.swiper-slide
-                                //-     .sliderItemInfo4
-                                //-         h3 24 mar
-                                //-         .sliderItemInfo4--separator
-                                //-             .sliderItemInfo4Separator
-                                //-         h4 Publicación de la lista de seleccionados.
-                                //- .slider__item4.swiper-slide
-                                //-     .sliderItemInfo4
-                                //-         h3 28 mar
-                                //-         .sliderItemInfo4--separator
-                                //-             .sliderItemInfo4Separator
-                                //-         h4 Publicación de la lista de becarios.
                                 .slider__item4.swiper-slide.swiper-slide1
                                     .sliderItemInfo4.etapa2Dark
                                         h3 Segundo

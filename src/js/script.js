@@ -177,16 +177,40 @@ window.addEventListener("load", () => {
         }
     })
 
-    let bodyContent = document.querySelector('body');
-    let closemodal = document.querySelector('.popupcontent--top--close');
-    let popContent = document.querySelector('.popup');
-    let popup = document.querySelector('.popupcontent');
+    // let bodyContent = document.querySelector('body');
+    // let closemodal = document.querySelector('.popupcontent--top--close');
+    // let popContent = document.querySelector('.popup');
+    // let popup = document.querySelector('.popupcontent');
 
-    closemodal.addEventListener('click', () => {
-        popup.classList.add('popupcontentClose');
-        popContent.classList.add('popupClose');
-        bodyContent.classList.remove('bodyOverflow');
+    // closemodal.addEventListener('click', () => {
+    //     popup.classList.add('popupcontentClose');
+    //     popContent.classList.add('popupClose');
+    //     bodyContent.classList.remove('bodyOverflow');
+    // })
+
+
+    // let preview = document.getElementById('preview');
+    // let vidio = document.getElementById('videoIframe1');
+
+    // preview.addEventListener("click", function() {
+    //     preview.style.display = "none";
+    //     vidio.src = "https://www.youtube.com/embed/Zz1KS4CpE10?si=Q8EWmKN35B5QoHtz"
+    //     vidio.style.display = "block";
+    //     // vidio.setAttribute('allow', 'autoplay=1')
+    // })
+
+    let vidio = document.getElementById('first_video');
+    vidio.addEventListener('click', (ev) => {
+        vidio.src = "https://upch-repo-comercial.s3.dualstack.us-east-1.amazonaws.com/%5BSoycayetano%5D%20TikTok%2022-01-25%20Testimonial%20Educaci%C3%B3n%202.mp4";
     })
+
+    let vidio2 = document.getElementById('second_video');
+    //-https://www.youtube.com/embed/Uprhfo-4v58?si=R2ut0AkjzlTY0q3S
+
+    vidio2.addEventListener("click", function() {
+        vidio2.src = "https://upch-repo-comercial.s3.dualstack.us-east-1.amazonaws.com/%5BPregrado%5D%20Testimonial%20Beca%2018_18-11-24-Subtitulado.mp4";
+    })
+
 
 })
 
